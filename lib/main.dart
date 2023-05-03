@@ -12,6 +12,8 @@ void main() {
                 Color.fromRGBO(24, 255, 255, 1),
                 Color.fromRGBO(132, 255, 255, 1)
               ],
+              begin: Alignment.topLeft,
+              end: Alignment.bottomRight,
             ),
           ),
           child: const Center(
