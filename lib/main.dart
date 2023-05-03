@@ -9,9 +9,9 @@ void main() {
           decoration: const BoxDecoration(
             gradient: LinearGradient(
               colors: [
-                Color.fromRGBO(132, 255, 255, 1),
-                Color.fromRGBO(206, 147, 216, 1),
-                Color.fromRGBO(130, 177, 255, 1)
+                Color.fromRGBO(0, 229, 255, 1),
+                Color.fromRGBO(24, 255, 255, 1),
+                Color.fromRGBO(132, 255, 255, 1)
               ],
             ),
           ),
