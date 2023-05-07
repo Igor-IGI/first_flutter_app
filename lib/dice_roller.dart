@@ -26,7 +26,9 @@ class _DiceRollerState extends State<DiceRoller> {
         ),
         TextButton(
           onPressed: () {
-            activeDiceImage = 'assets/images/dice-3.png';
+            setState(() {
+              activeDiceImage = 'assets/images/dice-3.png';
+            });
           },
           style: TextButton.styleFrom(
             // padding: const EdgeInsets.only(
