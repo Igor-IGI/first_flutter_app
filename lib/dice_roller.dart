@@ -16,7 +16,7 @@ class _DiceRollerState extends State<DiceRoller> {
 
   void rollDice() {
     setState(() {
-      currentDiceRole = Random().nextInt(7);
+      currentDiceRole = Random().nextInt(6) + 1;
     });
   }
 
