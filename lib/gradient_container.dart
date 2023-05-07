@@ -11,25 +11,25 @@ const endAlignment = Alignment.bottomRight;
 
 class GradientContainer extends StatelessWidget {
   // Below code is same like GradientContainer({key}) : super(key: key);
-  const GradientContainer({super.key});
+  const GradientContainer(
+      {required this.colors, required this.text, super.key});
+
+  final List<Color> colors;
+  final String text;
 
   @override
   Widget build(context) {
     return Container(
-      decoration: const BoxDecoration(
+      decoration: BoxDecoration(
         gradient: LinearGradient(
-          colors: [
-            Color.fromRGBO(0, 229, 255, 1),
-            Color.fromRGBO(24, 255, 255, 1),
-            Color.fromRGBO(132, 255, 255, 1)
-          ],
+          colors: colors,
           begin: startAlignment,
           end: endAlignment,
         ),
       ),
-      child: const Center(
+      child: Center(
         child: StyledText(
-          text: 'Hello',
+          text: text,
         ),
       ),
     );
