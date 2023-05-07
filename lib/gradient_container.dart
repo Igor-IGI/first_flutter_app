@@ -11,11 +11,10 @@ const endAlignment = Alignment.bottomRight;
 
 class GradientContainer extends StatelessWidget {
   // Below code is same like GradientContainer({key}) : super(key: key);
-  const GradientContainer(
-      {required this.colors, required this.imageName, super.key});
+  GradientContainer({required this.colors, super.key});
 
   final List<Color> colors;
-  final String imageName;
+  var activeDiceImage = 'assets/images/dice-5.png';
 
   @override
   Widget build(context) {
@@ -32,14 +31,16 @@ class GradientContainer extends StatelessWidget {
           mainAxisSize: MainAxisSize.min,
           children: [
             Image.asset(
-              imageName,
+              activeDiceImage,
               width: 200,
             ),
             const SizedBox(
               height: 20,
             ),
             TextButton(
-              onPressed: () {},
+              onPressed: () {
+                activeDiceImage = 'assets/images/dice-5.png';
+              },
               style: TextButton.styleFrom(
                 // padding: const EdgeInsets.only(
                 //   top: 20,
