@@ -11,8 +11,6 @@ void main() {
             Color.fromRGBO(24, 255, 120, 1),
             Color.fromRGBO(132, 255, 180, 1)
           ],
-          imageName: 'assets/images/dice-2.png',
-          imageWidth: 200,
         ),
       ),
     ),
