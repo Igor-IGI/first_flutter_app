@@ -13,12 +13,12 @@ class GradientContainer extends StatelessWidget {
   // Below code is same like GradientContainer({key}) : super(key: key);
   const GradientContainer(
       {required this.colors,
-      required this.name,
+      required this.imageName,
       required this.imageWidth,
       super.key});
 
   final List<Color> colors;
-  final String name;
+  final String imageName;
   final double imageWidth;
 
   @override
@@ -33,7 +33,7 @@ class GradientContainer extends StatelessWidget {
       ),
       child: Center(
         child: Image.asset(
-          name,
+          imageName,
           width: imageWidth,
         ),
       ),
