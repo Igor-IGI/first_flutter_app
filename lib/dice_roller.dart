@@ -12,6 +12,12 @@ class DiceRoller extends StatefulWidget {
 class _DiceRollerState extends State<DiceRoller> {
   var activeDiceImage = 'assets/images/dice-5.png';
 
+  void rollDice() {
+    setState(() {
+      activeDiceImage = 'assets/images/dice-3.png';
+    });
+  }
+
   @override
   Widget build(context) {
     return Column(
@@ -25,11 +31,7 @@ class _DiceRollerState extends State<DiceRoller> {
           height: 20,
         ),
         TextButton(
-          onPressed: () {
-            setState(() {
-              activeDiceImage = 'assets/images/dice-3.png';
-            });
-          },
+          onPressed: rollDice,
           style: TextButton.styleFrom(
             // padding: const EdgeInsets.only(
             //   top: 20,
