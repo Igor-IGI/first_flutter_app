@@ -5,7 +5,14 @@ void main() {
   runApp(
     const MaterialApp(
       home: Scaffold(
-        body: GradientContainer(),
+        body: GradientContainer(
+          colors: [
+            Color.fromRGBO(0, 229, 45, 1),
+            Color.fromRGBO(24, 255, 120, 1),
+            Color.fromRGBO(132, 255, 180, 1)
+          ],
+          text: 'My name is Igor',
+        ),
       ),
     ),
   );
