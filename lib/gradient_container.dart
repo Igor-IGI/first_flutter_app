@@ -12,14 +12,10 @@ const endAlignment = Alignment.bottomRight;
 class GradientContainer extends StatelessWidget {
   // Below code is same like GradientContainer({key}) : super(key: key);
   const GradientContainer(
-      {required this.colors,
-      required this.imageName,
-      required this.imageWidth,
-      super.key});
+      {required this.colors, required this.imageName, super.key});
 
   final List<Color> colors;
   final String imageName;
-  final double imageWidth;
 
   @override
   Widget build(context) {
@@ -34,7 +30,7 @@ class GradientContainer extends StatelessWidget {
       child: Center(
         child: Image.asset(
           imageName,
-          width: imageWidth,
+          width: 200,
         ),
       ),
     );
